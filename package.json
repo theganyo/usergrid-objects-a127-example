@@ -1,0 +1,30 @@
+{
+  "name": "usergrid-objects-127-example",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Example of using usergrid-objects and Apigee 127 together",
+  "keywords": [],
+  "author": "Scott Ganyo",
+  "license": "MIT",
+  "main": "app.js",
+  "dependencies": {
+    "express": "3.x.x",
+    "a127-magic": "",
+    "lodash": "",
+    "async": "",
+    "usergrid-objects": "",
+    "body-parser": ""
+  },
+  "devDependencies": {
+    "should": "3.1.x"
+  },
+  "scripts": {
+    "start": "a127-project start"
+  },
+  "api": {
+    "name": "test",
+    "basePath": "/test",
+    "docsPath": "/docs",
+    "main": "app.js"
+  }
+}
