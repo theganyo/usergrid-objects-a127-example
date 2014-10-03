@@ -5,7 +5,7 @@ Example of using usergrid-objects with Apigee-127
 3. a127 project start
 4. Now here are some things you can do:
 
- Create a dog (using json):
+Create a dog (using json):
   
     curl -i -H "Content-type: application/json" -X POST http://localhost:10010/dogs -d '{ "name": "Fido", "breed" : "Beagle" }'
     
