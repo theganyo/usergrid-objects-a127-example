@@ -10,7 +10,8 @@ var Usergrid = require('usergrid-objects')(config.usergrid);
 
 // ensure body is parsed
 var bodyParser = require('body-parser');
-app.use(bodyParser);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // use apigee-127
 app.use(a127.middleware());
