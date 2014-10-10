@@ -20,8 +20,18 @@ paths:
     x-swagger-router-controller: dogs
     get:
       operationId: list
+      responses:
+        default:
+          description: "Default"
+          schema:
+            $ref: "GenericResponse"
     post:
       operationId: create
+      responses:
+        default:
+          description: "Default"
+          schema:
+            $ref: "GenericResponse"
   /dogs/{id}:
     x-swagger-router-controller: dogs
     parameters:
@@ -31,10 +41,25 @@ paths:
         type: string
     delete:
       operationId: delete
+      responses:
+        default:
+          description: "Default"
+          schema:
+            $ref: "GenericResponse"
     get:
       operationId: get
+      responses:
+        default:
+          description: "Default"
+          schema:
+            $ref: "GenericResponse"
     put:
       operationId: update
+      responses:
+        default:
+          description: "Default"
+          schema:
+            $ref: "GenericResponse"
   /dogs/{id}/pet:
     x-swagger-router-controller: dogs
     parameters:
@@ -44,6 +69,11 @@ paths:
         type: string
     post:
       operationId: pet
+      responses:
+        default:
+          description: "Default"
+          schema:
+            $ref: "GenericResponse"
 definitions:
   ErrorResponse:
     required:
